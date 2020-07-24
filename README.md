@@ -1,7 +1,9 @@
 # ARchaeology Library
 Welcome to the ARchaeology online library!
-You can download and view the AR models on your phone from [here](https://lili0824.github.io/ARchaeology/).
-Currently this site supports iPhone users with iOS 12 or above, and preferably iPhone 6 or above.
-We are working on a resolution for Android users!
+You can view the AR models on your phone from [here](https://lili0824.github.io/ARchaeology/).
+For Mac users, please use Chrome or Firefox for best results. 
 
-This project is inspired by https://www.appcoda.com/arkit-quick-look/.
+This project is only possible thanks to the help from:
+https://www.appcoda.com/arkit-quick-look/
+https://github.com/google/model-viewer
+https://codelabs.developers.google.com/codelabs/model-viewer/index.html?index=..%2F..index#4
