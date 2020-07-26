@@ -15,29 +15,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <html lang="en">
-  <head>
-    <title>&lt;model-viewer&gt; codelab</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="demo-styles.css">
-  </head>
-<body>
-  <p>Welcome to the ARchaeology online Library with &lt;model-viewer&gt; codelab! Please reach the edge of your
-    phone screen to scroll down to see all models available.</p>
-
-  <!-- 💁 Include both scripts below to support all browsers! -->
-
-  <!-- Loads <model-viewer> for modern browsers: -->
-  <script type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
-  </script>
-
-  <!-- Loads <model-viewer> for old browsers like IE11: -->
-  <script nomodule
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-  </script>
+<head>
+  <title>&lt;model-viewer&gt; Format Support</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,
+  minimum-scale=1.0, maximum-scale=1.0">
+  <link type="text/css" href="example.css" rel="stylesheet" />
+  <!-- <link rel="shortcut icon" type="image/png" href="../assets/favicon.png"/> -->
 
   <!-- The following libraries and polyfills are recommended to maximize browser support -->
   <!-- NOTE: you must adjust the paths as appropriate for your project -->
@@ -52,49 +36,136 @@ limitations under the License.
   <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
 
   <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
-  <!--<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>-->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
 
   <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
 
+</head>
 
-  <!-- <model-viewer src="third_party/Astronaut/Astronaut.glb"
-                ios-src="third_party/Astronaut/Astronaut.usdz"
-                ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
-                camera-controls
-                background-color="#622dcf"
-                shadow-intensity="1"
-               alt="A 3D model of an astronaut">
-  </model-viewer> -->
+<body>
+  <div class="wrapper">
+    <h4 id="intro"><span class="font-medium">ARchaeology online library </span>Welcome to the ARchaeology online library.
+    Here you can view AR models on your phone. </h4>
+  </div>
 
-  <model-viewer src="center_ridge.gltf"
-                ios-src="center_ridge_scaled.usdz"
-                ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
-                camera-controls
-                background-color="#622dcf"
-                shadow-intensity="1"
+<div class="sample">
+  <div class="wrapper">
+    <div class="heading">
+      <h2 class="demo-title">Center ridge core</h2>
+      <h4>This is a 3D model of the center-ridged shape Dibble core. </h4>
+    </div>
+ </div>
+ <div class="demo">
+   <model-viewer src="center_ridge.gltf"
+               ios-src="center_ridge_scaled.usdz"
+               ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+               camera-controls
+               shadow-intensity="1"
                alt="Center ridge core">
-  </model-viewer>
+   </model-viewer>
+</div>
+ </div>
 
-  <model-viewer src="semispherical.gltf"
+ <div class="sample">
+   <div class="wrapper">
+     <div class="heading">
+       <h2 class="demo-title">Spemispherical core</h2>
+       <h4>This is a 3D model of the semispherical Dibble core. </h4>
+     </div>
+  </div>
+  <div class="demo">
+    <model-viewer src="semispherical.gltf"
                 ios-src="semispherical_scaled.usdz"
                 ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
                 camera-controls
-                background-color="#622dcf"
                 shadow-intensity="1"
                alt="Semispherical core">
-  </model-viewer>
+    </model-viewer>
+ </div>
+  </div>
 
-  <model-viewer src="pechiv.gltf"
-                ios-src="pechiv_low_resolution.usdz"
-                ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
-                camera-controls
-                background-color="#622dcf"
-                shadow-intensity="1"
-               alt="PechIV">
-  </model-viewer>
+  <div class="sample">
+    <div class="wrapper">
+      <div class="heading">
+        <h2 class="demo-title">Pech de l'Azé IV</h2>
+        <h4>This is a low resolution 3D model of site Pech de l'Azé IV </h4>
+      </div>
+   </div>
+   <div class="demo">
+     <model-viewer src="pechiv_low_resolution.gltf"
+                   ios-src="pechiv_low_resolution.usdz"
+                   ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+                   camera-controls
+                   shadow-intensity="1"
+                  alt="PechIV">
+     </model-viewer>
+  </div>
+   </div>
+
+   <div class="sample">
+     <div class="wrapper">
+       <div class="heading">
+         <h2 class="demo-title">Pech de l'Azé IV</h2>
+         <h4>This is a high resolution 3D model of site Pech de l'Azé IV </h4>
+       </div>
+    </div>
+    <div class="demo">
+      <model-viewer src="pechiv_low_resolution.gltf"
+                    ios-src="pechiv_high_resolution.usdz"
+                    ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+                    camera-controls
+                    shadow-intensity="1"
+                   alt="PechIV">
+      </model-viewer>
+   </div>
+    </div>
+
+   <div class="sample">
+     <div class="wrapper">
+       <div class="heading">
+         <h2 class="demo-title">Shuidonggou Locality 2 (SDG2) landscape</h2>
+         <h4>This is the low resolution mode of SDG2 landscape.</h4>
+       </div>
+    </div>
+    <div class="demo">
+      <model-viewer src="sdg2_low_resolution.gltf"
+                    ios-src="sdg2_low_resolution.usdz"
+                    ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+                    camera-controls
+                    shadow-intensity="1"
+                   alt="SDG2">
+      </model-viewer>
+   </div>
+    </div>
 
 
+<div class="footer">
+  <ul>
+    <li class="attribution">
+      More information about the project can be found <a href="https://github.com/lili0824/ARchaeology">here</a>.
+    </li>
+  </ul>
+  <div style="margin-top:24px;" class="copyright">©Copyright 2018-2020 Google Inc. Licensed under the Apache License 2.0.</div>
+  </div>
+
+
+<!-- Documentation-specific dependencies: -->
+  <script type="module"
+      src="dependencies.js">
+  </script>
+  <script nomodule
+      src="dependencies-legacy.js">
+  </script>
+
+<!-- Loads <model-viewer> for modern browsers: -->
+<script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
 
 </body>
 
