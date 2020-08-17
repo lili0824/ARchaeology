@@ -3,6 +3,7 @@ Welcome to the ARchaeology online library!
 You can view the AR models on your phone from [here](https://lili0824.github.io/ARchaeology/).
 For Mac users, please use Chrome or Firefox for best results. 
 You can also scan the QR code below and access the site on your phone:
+
 ![QR code for ARchaeology](https://github.com/lili0824/ARchaeology/blob/master/docs/archaeology.png)
 
 This project is only possible thanks to the help from:<br />
