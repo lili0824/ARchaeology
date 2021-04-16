@@ -66,12 +66,41 @@
     <div class="inner-home darken"><span class="attribute">&lt;ARchaeology Library&gt;</span></div>
   </a>
 </div>
+
 <hr class="sidebar-hr">
+
+<div class="categories" id="sidebar-category-container">
+  <div class="category">
+    <h3 id="active-container-sidebar" class="active">
+      <a class="darken" href="https://lili0824.github.io/ARchaeology/" onclick="sidebarClick()">Site Models</a>
+    </h3>
+    <div class="subCategory">
+      <h4 class="subcategory-header" id="container-displayPoster-sidebar">
+        <a class="darken" href="#pech_lowres" onclick="sidebarClick()">Pech IV (low resolution)</a>
+      </h4>
+    </div>
+  </div>
+
+  <div class="category">
+    <h3 id="active-container-sidebar" class="active">
+      <a class="darken" href="https://lili0824.github.io/ARchaeology/" onclick="sidebarClick()">Controlled Experiments</a>
+    </h3>
+    <div class="subCategory">
+      <h4 class="subcategory-header" id="container-displayPoster-sidebar">
+        <a class="darken" href="#semispherical_core" onclick="sidebarClick()">Semispherical Core)</a>
+      </h4>
+    </div>
+  </div>
 
 </div>
 
 <div id="toggle">
+  <h1 class="tab" onclick="toggleSidebar()">☰</h1>
+  <div class="exampleHeader">
+    <h1>Examples</h1>
+  </div>
 </div>
+
 <div class="examples-container">
 
 <div class="wrapper">
@@ -142,7 +171,7 @@
        <h4>This is a 3D model of the semispherical Dibble core. </h4>
      </div>
   </div>
-  <div class="demo">
+  <div id = "semispherical_core", class="demo">
     <model-viewer src="assets/glb_files/semispherical.glb"
                 ios-src="assets/usdz_files/semispherical_scaled.usdz"
                 ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
