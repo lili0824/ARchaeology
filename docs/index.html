@@ -16,8 +16,7 @@
  */
 -->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="js-focus-visible" data-js-focus-visible="" style="--sidebar-width:0px; --neg-sidebar-width:-300px;">
 <head>
   <title>ARchaeology Library</title>
   <meta charset="utf-8">
@@ -69,29 +68,40 @@
 
     <hr class="sidebar-hr">
 
-    <div class="categories" id="sidebar-category-container">
-      <div class="category">
-        <h3 id="active-container-sidebar" class="active">
-          <a class="darken" href="https://lili0824.github.io/ARchaeology/" onclick="sidebarClick()">Site Models</a>
-        </h3>
-        <div class="subCategory">
-          <h4 class="subcategory-header" id="container-displayPoster-sidebar">
-            <a class="darken" href="#pech_lowres" onclick="sidebarClick()">Pech IV (low resolution)</a>
-          </h4>
-        </div>
-      </div>
+    <div class="flipper">
 
-      <div class="category">
-        <h3 id="active-container-sidebar" class="active">
-          <a class="darken" href="https://lili0824.github.io/ARchaeology/" onclick="sidebarClick()">Controlled Experiments</a>
-        </h3>
-        <div class="subCategory">
-          <h4 class="subcategory-header" id="container-displayPoster-sidebar">
-            <a class="darken" href="#semispherical_core" onclick="sidebarClick()">Semispherical Core)</a>
-          </h4>
-        </div>
+      <div class="inner-flipper" id="documentation-flipper" onclick="switchPages('examples', '../../docs/#loading')">
+        <a class="darken">DOCUMENTATION</a>
+      </div>
+      <div class="inner-flipper">|</div>
+      <div class="inner-flipper" id="examples-flipper">
+      <div class="bolden">EXAMPLES</div>
       </div>
     </div>
+
+      <div class="categories" id="sidebar-category-container">
+        <div class="category">
+          <h3 id="active-container-sidebar" class="active">
+            <a class="darken" href="https://lili0824.github.io/ARchaeology/" onclick="sidebarClick()">Site Models</a>
+          </h3>
+          <div class="subCategory">
+            <h4 class="subcategory-header" id="container-displayPoster-sidebar">
+              <a class="darken" href="#pech_lowres" onclick="sidebarClick()">Pech IV (low resolution)</a>
+            </h4>
+          </div>
+        </div>
+
+        <div class="category">
+          <h3 id="active-container-sidebar" class="active">
+            <a class="darken" href="https://lili0824.github.io/ARchaeology/" onclick="sidebarClick()">Controlled Experiments</a>
+          </h3>
+          <div class="subCategory">
+            <h4 class="subcategory-header" id="container-displayPoster-sidebar">
+              <a class="darken" href="#semispherical_core" onclick="sidebarClick()">Semispherical Core)</a>
+            </h4>
+          </div>
+        </div>
+      </div>
   </div>
 
   <div id="toggle">
