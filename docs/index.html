@@ -297,7 +297,11 @@
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
 </script>
 
-<script type="module" src="docs-and-examples.js">
+<script type="module" src="docs-and-examples.js"> </script>
+
+<script type="module">
+    (() => { init('examples-loading'); })();
+    (() => { initFooterLinks();})();
 </script>
 
 </body>
